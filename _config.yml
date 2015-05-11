@@ -1,9 +1,9 @@
 menu:
   home: /
   #categories: /categories
-  #about: /about
-  archives: /archives
-  tags: /tags
+  about: /about
+  # archives: /archives
+  # tags: /tags
   #commonweal: /404.html
 
 # Place your favicon.ico to /source directory.
@@ -20,10 +20,10 @@ rss:
 # Icon fonts
 # Place your font into next/source/fonts, specify directory-name and font-name here
 # Avialable: default | linecons | fifty-shades | feather
-icon_font: default
-#icon_font: fifty-shades
-#icon_font: feather
-#icon_font: linecons
+# icon_font: default
+icon_font: fifty-shades
+# icon_font: feather
+# icon_font: linecons
 
 # Code Highlight theme
 # Available value: normal | night | night eighties | night blue | night bright
