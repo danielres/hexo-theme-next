@@ -36,7 +36,6 @@
     vertical-align: top;
     position: relative;
     padding-bottom: 5px;
-
   }
   >div::before  {
     content: "";
@@ -122,7 +121,7 @@
 
     &:hover {
       color: $black-deep;
-      font-weight: bold;
+      //font-weight: bold;
       border-bottom: none;
     }
 
@@ -143,6 +142,7 @@
 }
 
 .post-nav-prev {
+  float: left;
   a:before {
     content: ' ';
     background: url($chevron-left) no-repeat 0 50%;
@@ -154,14 +154,15 @@
 }
 
 .post-nav-next {
+  float: right;
   text-align: right;
 
-  a:after {
+  a:before {
     content: ' ';
     background: url($chevron-right) no-repeat 100% 50%;
     background-size: 8px;
   }
-  a:hover:after {
+  a:hover:before {
     opacity: 1;
   }
 }
