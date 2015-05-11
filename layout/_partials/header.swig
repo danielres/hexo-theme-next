@@ -1,3 +1,4 @@
+{% if false == 'DEACTIVATED' %}
 <h1 class="site-meta">
   <span class="logo-line-before"><i></i></span>
   <a href="{{ config.root }}" class="brand">
@@ -8,6 +9,7 @@
   </a>
   <span class="logo-line-after"><i></i></span>
 </h1>
+{% endif %}
 
 {% if theme.menu %}
   <ul id="menu" class="menu">
@@ -51,9 +53,10 @@
     {% for name, path in theme.menu %}
       {% set itemName = name.toLowerCase() %}
       <li class="menu-item menu-item-{{ itemName }}">
-        <a href="{{ url_for(path) }}">
-          <i class="menu-item-icon icon-{{ itemName }}"></i> <br />
-          {{ __('menu.' + itemName) }}
+        <a style="padding-bottom: 10px" href="{{ url_for(path) }}">
+          <span style="visibility: hidden">{{ __('menu.' + itemName) }}</span>
+          <br />
+          <i class="menu-item-icon icon-{{ itemName }}"></i>
         </a>
       </li>
     {% endfor %}
