@@ -54,8 +54,7 @@
       {% set itemName = name.toLowerCase() %}
       <li class="menu-item menu-item-{{ itemName }}">
         <a style="padding-bottom: 10px" href="{{ url_for(path) }}">
-          <span style="visibility: hidden">{{ __('menu.' + itemName) }}</span>
-          <br />
+          <span style="visibility: hidden">{{ __('menu.' + itemName) }}<br /></span>
           <i class="menu-item-icon icon-{{ itemName }}"></i>
         </a>
       </li>
