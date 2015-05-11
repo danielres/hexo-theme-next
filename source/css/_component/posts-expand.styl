@@ -27,29 +27,33 @@
   }
 }
 .posts-expand .post-title-link {
-  display: inline-block;
-  position: relative;
   color: $black-light;
   border-bottom: none;
-  line-height: 1.2;
-  vertical-align: top;
+  line-height: 1.4;
+  display: inline-block;
 
-  &::before {
+  >div{
+    vertical-align: top;
+    position: relative;
+    padding-bottom: 5px;
+
+  }
+  >div::before  {
     content: "";
     position: absolute;
     width: 100%;
-    height: 2px;
+    height: 0px;
+    border-bottom: 1px solid gray;
     bottom: 0;
     left: 0;
-    background-color: #000;
     visibility: hidden;
     transform: scaleX(0);
     the-transition();
   }
 
-  &:hover::before {
+  &:hover>div::before {
     visibility: visible
-    transform: scaleX(1);
+    transform: scaleX(1.1);
   }
 }
 
