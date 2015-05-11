@@ -3,6 +3,12 @@
 <head>
   {% include '_partials/head.swig' %}
   <title>{% block title %}{% endblock %}</title>
+
+  <style>
+  .post-title small { font-weight: normal; }
+  .post-more-link {display: none}
+  </style>
+
 </head>
 
 <body>
