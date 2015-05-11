@@ -29,8 +29,9 @@
         {% endif %}
       </div>
 
-
+      {% if false == 'DEACTIVATED' %}
       {% block sidebar %}{% endblock %}
+      {% endif %}
     </div>
 
     <div id="footer" class="footer">
