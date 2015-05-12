@@ -15,10 +15,10 @@
           {% else %}
             {% if is_home() %}
               <a class="post-title-link" href="{{ url_for(post.path) }}">
-                {{ post.title | default(__('post.untitled'))}}
+                <div>{{ post.title | default(__('post.untitled'))}}</div>{% if post.sub %}<small>{{ post.sub }}</small>{% endif %}
               </a>
             {% else %}
-              {{ post.title }}
+              <div>{{ post.title }}</div>{% if post.sub %}<small>{{ post.sub }}</small>{% endif %}
             {% endif %}
           {% endif %}
         </h1>
@@ -113,13 +113,13 @@
         <div class="post-nav">
           <div class="post-nav-prev post-nav-item">
             {% if post.prev %}
-              <a href="{{ url_for(post.prev.path) }}">{{post.prev.title}}</a>
+              <a href="{{ url_for(post.prev.path) }}"><div>{{post.prev.title}}</div><small>{{post.prev.sub}}</small></a>
             {% endif %}
           </div>
 
           <div class="post-nav-next post-nav-item">
             {% if post.next %}
-              <a href="{{ url_for(post.next.path) }}">{{post.next.title}}</a>
+              <a href="{{ url_for(post.next.path) }}"><div>{{post.next.title}}</div><small>{{post.next.sub}}</small></a>
             {% endif %}
           </div>
         </div>
