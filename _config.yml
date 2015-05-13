@@ -1,6 +1,9 @@
 menu:
   home: /
   #categories: /categories
+  embed2: /dev
+  picture: /creations
+  # camera: /photos
   about: /about
   # archives: /archives
   # tags: /tags
@@ -21,9 +24,10 @@ rss:
 # Place your font into next/source/fonts, specify directory-name and font-name here
 # Avialable: default | linecons | fifty-shades | feather
 # icon_font: default
-icon_font: fifty-shades
+# icon_font: fifty-shades
 # icon_font: feather
 # icon_font: linecons
+icon_font: dare
 
 # Code Highlight theme
 # Available value: normal | night | night eighties | night blue | night bright
